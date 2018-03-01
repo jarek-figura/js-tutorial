@@ -1,9 +1,23 @@
-// *** Lesson 10 *** //
+// *** Lesson 11 *** //
 
-var myVar = "Shaun";
-document.write(myVar);  // "Shaun"
-console.log(myVar);     // "Shaun"
-document.write(10);     // "Shaun10"
-console.log(50);        // 50
-console.log(20 * 5);    // 100
-document.write(20 / 5); // "Shaun104"
+var iLikeMeet = true; console.log(iLikeMeet); // true
+iLikeMeet = "true";   console.log(iLikeMeet); // "true"
+iLikeMeet = false;    console.log(iLikeMeet); // false
+
+console.log(7 > 5);   // true
+console.log(7 < 5);   // true
+// console.log(7 = 5);
+console.log(7 == 5);  // false
+console.log(7 == 7);  // true
+
+// Truthy
+var myVar;
+
+myVar = Boolean(7 > 5);   console.log(myVar); // true
+myVar = Boolean(6);       console.log(myVar); // true
+myVar = Boolean(-5);      console.log(myVar); // true
+myVar = Boolean("hello"); console.log(myVar); // true
+
+// Falsy
+myVar = Boolean(0);       console.log(myVar); // false
+myVar = Boolean("");      console.log(myVar); // false
