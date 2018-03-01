@@ -1,30 +1,9 @@
 // *** Lesson 14 *** //
 
-var x = 5;
-document.write("x = 5 - assignment");
-document.write("<br/>x > 4 - "); document.write(x > 4);
-document.write("<br/>x > 5 - "); document.write(x > 5);
-document.write("<br/>x >= 5 - "); document.write(x >= 5);
-document.write("<br/>x >= 4 - "); document.write(x >= 4);
-document.write("<br/>x < 5 - "); document.write(x < 5);
-document.write("<br/>x <= 5 - "); document.write(x <= 5);
-document.write("<br/>x == 4 - "); document.write(x == 4);
-document.write("<br/>x == 5 - "); document.write(x == 5);
+var myAge = 26;
 
-document.write("<br/>x === 5 - "); document.write(x === 5);
-
-document.write("<br/>");
-document.write("<br/>x = '5' - assignment"); x = "5";
-document.write("<br/>x == 5 - "); document.write(x == 5);
-document.write("<br/>x === 5 - "); document.write(x === 5);
-document.write("<br/>x === '5' - "); document.write(x === "5");
-
-document.write("<br/>");
-document.write("<br/>x = 5 - assignment"); x = 5;
-document.write("<br/>x != 4 - "); document.write(x != 4);
-document.write("<br/>x != 5 - "); document.write(x != 5);
-document.write("<br/>x !== 5 - "); document.write(x !== 5);
-
-document.write("<br/>");
-document.write("<br/>x = '5' - assignment"); x = "5";
-document.write("<br/>x !== 5 - "); document.write(x !== 5);
+if (myAge <= 18 || myAge > 30 || myAge === 25) {
+	document.write("You ain't coming!");
+} else {
+	document.write("You can come, you cool dude");
+}
