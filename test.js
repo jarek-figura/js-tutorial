@@ -1,13 +1,30 @@
-// *** Lesson 13 *** //
+// *** Lesson 14 *** //
 
-var myAge = 49;
+var x = 5;
+document.write("x = 5 - assignment");
+document.write("<br/>x > 4 - "); document.write(x > 4);
+document.write("<br/>x > 5 - "); document.write(x > 5);
+document.write("<br/>x >= 5 - "); document.write(x >= 5);
+document.write("<br/>x >= 4 - "); document.write(x >= 4);
+document.write("<br/>x < 5 - "); document.write(x < 5);
+document.write("<br/>x <= 5 - "); document.write(x <= 5);
+document.write("<br/>x == 4 - "); document.write(x == 4);
+document.write("<br/>x == 5 - "); document.write(x == 5);
 
-if (myAge > 30) {
-	document.write("you are over 30!");
-} else if (myAge > 20) {
-	document.write("you are over 20!");
-} else if (myAge > 10) {
-	document.write("you are over 10!");
-} else {
-	document.write("you are not over 10!");
-}
+document.write("<br/>x === 5 - "); document.write(x === 5);
+
+document.write("<br/>");
+document.write("<br/>x = '5' - assignment"); x = "5";
+document.write("<br/>x == 5 - "); document.write(x == 5);
+document.write("<br/>x === 5 - "); document.write(x === 5);
+document.write("<br/>x === '5' - "); document.write(x === "5");
+
+document.write("<br/>");
+document.write("<br/>x = 5 - assignment"); x = 5;
+document.write("<br/>x != 4 - "); document.write(x != 4);
+document.write("<br/>x != 5 - "); document.write(x != 5);
+document.write("<br/>x !== 5 - "); document.write(x !== 5);
+
+document.write("<br/>");
+document.write("<br/>x = '5' - assignment"); x = "5";
+document.write("<br/>x !== 5 - "); document.write(x !== 5);
