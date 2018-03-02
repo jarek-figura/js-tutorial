@@ -1,26 +1,25 @@
-// *** Lesson 28 *** //
+// *** Lesson 29 *** //
 
-var myArray = new Array();
-myArray[0] = 8;
-myArray[1] = "hello";
-console.log(myArray);
+console.log(this); // window object
 
-var myCar = new Object();         console.log(myCar);
-myCar.maxSpeed = 50;
-myCar.driver = "Shaun";           console.log(myCar);
-console.log(myCar.driver);
-
-myCar.drive = function () { console.log("now driving"); };
-myCar.drive();
-
-// short-hand notation
 var myCar2 = {
 	maxSpeed: 70,
 	driver: "Net Ninja",
 	drive: function (speed, time) {
 		console.log("driving distance: " + speed * time + " miles");
+	},
+	logDriver: function () {
+		console.log("driver name is: " + this.driver);
 	}
+/*
+	test: function () {
+		console.log(this);  // myCar2 object
+		console.log(myCar2);  // the same myCar2 object
+	}
+*/
 };
 
+// myCar2.test();
+myCar2.logDriver();
 console.log(myCar2.maxSpeed);
 myCar2.drive(50, 3);
