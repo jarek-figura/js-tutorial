@@ -1,15 +1,10 @@
-// *** Lesson 21 *** //
+// *** Lesson 22 *** //
 
-function getAverage (a, b) {
-	var average = (a + b) / 2; // local variable
-	console.log(average);
-	return average;
-}
+var a = 7;
+var b = 5;
 
-var myResult = getAverage(7, 11); // global variable
+console.log(a + b);
 
-function logResult () {
-	console.log("the 'average' is " + myResult + " inside the function");
-}
+console.log(Math.PI);
 
-logResult();
+
