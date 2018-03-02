@@ -1,21 +1,13 @@
-// *** Lesson 26 *** //
+// *** Lesson 27 *** //
 
-var myArray = [];
-myArray[0] = 25;
-myArray[1] = 35;
-myArray[2] = true;
-myArray[3] = "hello";
-console.log(myArray);
+// var myCar = new Car(); console.log(myCar);
 
-myArray[2] = false;
-console.log(myArray);
+var myStr = new String(); console.log(myStr);
+myStr = "hello";          console.log(myStr);
+console.log(myStr.length);
+console.log(myStr.toUpperCase());
 
-var myArray2 = [10, 20, "hi", false];
-console.log(myArray2);
-
-var myArray3 = new Array();   console.log(myArray3);
-var myArray4 = new Array(5);  console.log(myArray4);
-
-console.log(myArray2.length);
-console.log(myArray2.sort());
-console.log(myArray2.reverse());
+// short-hand version of "new String()"
+var myStr2 = "hi there";
+console.log(myStr2.length);
+console.log(myStr2.toUpperCase());
