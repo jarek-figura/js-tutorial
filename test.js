@@ -1,16 +1,21 @@
-// *** Lesson 23 *** //
+// *** Lesson 24 *** //
 
-var a = "hello";
-var b = 5;
+var myStr = 'I\'m a "fun ninja" string';
 
-// double negative
-if (!isNaN(a)) {
-	console.log("meaning of life is " + (a * b));
+if (myStr.indexOf("ninja") === -1) {
+	console.log("the word 'ninja' is not in the string");
 } else {
-	console.log("that aint even a number, thickle");
-
+	console.log("the word 'ninja' starts at position " + myStr.indexOf("ninja"));
 }
 
-console.log(a * b);
+var str1 = "abc";
+var str2 = "bcd";
+var str3 = "abc";
+var str4 = "ABC";
 
-
+console.log(str1 === str2);
+console.log(str1 === str3);
+console.log(str1 === str4);
+console.log(str1.toLowerCase() === str4.toLowerCase());
+console.log(str1 < str2);
+console.log(str1 < str4);
