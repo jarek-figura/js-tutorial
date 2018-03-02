@@ -1,13 +1,26 @@
-// *** Lesson 27 *** //
+// *** Lesson 28 *** //
 
-// var myCar = new Car(); console.log(myCar);
+var myArray = new Array();
+myArray[0] = 8;
+myArray[1] = "hello";
+console.log(myArray);
 
-var myStr = new String(); console.log(myStr);
-myStr = "hello";          console.log(myStr);
-console.log(myStr.length);
-console.log(myStr.toUpperCase());
+var myCar = new Object();         console.log(myCar);
+myCar.maxSpeed = 50;
+myCar.driver = "Shaun";           console.log(myCar);
+console.log(myCar.driver);
 
-// short-hand version of "new String()"
-var myStr2 = "hi there";
-console.log(myStr2.length);
-console.log(myStr2.toUpperCase());
+myCar.drive = function () { console.log("now driving"); };
+myCar.drive();
+
+// short-hand notation
+var myCar2 = {
+	maxSpeed: 70,
+	driver: "Net Ninja",
+	drive: function (speed, time) {
+		console.log("driving distance: " + speed * time + " miles");
+	}
+};
+
+console.log(myCar2.maxSpeed);
+myCar2.drive(50, 3);
