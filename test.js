@@ -1,9 +1,21 @@
-// *** Lesson 25 *** //
+// *** Lesson 26 *** //
 
-var str = "hello, world";   console.log("str = " + str);
-var str2 = str.slice(2, 9); console.log(str2);
-var str3 = str.slice(2);    console.log(str3);
+var myArray = [];
+myArray[0] = 25;
+myArray[1] = 35;
+myArray[2] = true;
+myArray[3] = "hello";
+console.log(myArray);
 
-console.log("");
-var tags = "meat, ham, salami, pork, beef, chicken"; console.log(tags);
-var tagsArray = tags.split(", ");                    console.log(tagsArray);
+myArray[2] = false;
+console.log(myArray);
+
+var myArray2 = [10, 20, "hi", false];
+console.log(myArray2);
+
+var myArray3 = new Array();   console.log(myArray3);
+var myArray4 = new Array(5);  console.log(myArray4);
+
+console.log(myArray2.length);
+console.log(myArray2.sort());
+console.log(myArray2.reverse());
