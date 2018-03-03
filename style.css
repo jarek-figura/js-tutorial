@@ -1,0 +1,35 @@
+body {
+	background: #eee;
+}
+
+#content {
+	width: 400px;
+	background: #fff;
+	padding: 20px;
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	color: #444;
+	margin: 0 auto;
+	max-height: 160px;
+	overflow: hidden;
+	transition: max-height 0.7s;
+}
+
+#content.open {
+	max-height: 1000px;
+	transition: max-height 0.7s;
+}
+
+#show-more {
+	background: #1594e5;
+	color: #fff;
+	font-family: Arial, sans-serif;
+	display: block;
+	width: 170px;
+	font-size: 24px;
+	text-transform: uppercase;
+	padding: 10px;
+	text-align: center;
+	margin: 20px auto;
+	cursor: pointer;
+}
