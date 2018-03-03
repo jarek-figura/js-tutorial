@@ -1,4 +1,4 @@
-// *** Lesson 36 *** //
+// *** Lesson 37 *** //
 
 // DOM (Document Object Model)
 // Document is a representation of HTML
@@ -6,11 +6,11 @@
 // Model is a tree representation of Objects
 // Node is everything we can change in the Document (Element, Text, HTML attributes)
 
-var title = document.getElementById("page-title");       console.log(title);
+var newLi = document.createElement("li");   console.log(newLi);
+var newA  = document.createElement("a");    console.log(newA);
+var menu = document.getElementById("main-nav").getElementsByTagName("ul")[0]; console.log(menu);
+menu.appendChild(newLi);
+newLi.appendChild(newA);
+newA.innerHTML = "Blog";
 
-title.setAttribute("style", "position: relative;");
-title.setAttribute("style", "left: 10px;");           // overriding previous style
-title.setAttribute("style", "position: relative; left: 10px;");
-title.style.left = "20px";                            // updating a property
-title.style.color = "red";                            // adding a property
-title.style.backgroundColor = "blue";                 // don't use hyphen '-'
+menu.insertBefore(newLi, menu.getElementsByTagName("li")[0]);
