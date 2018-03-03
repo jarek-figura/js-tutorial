@@ -9,14 +9,21 @@
 
 <body>
 
-<!--
-<div id="message">
-	<p>THIS IS A REEEEEEAAAALLLLY IMPORTANT NOTIFICATION</p>
-	<p>PIE IS NICE</p>
-</div>
--->
-
-<div id="colour-changer"></div>
+<form id="my-form" name="myForm" action="#">
+	<label for="my-form">Name:</label>
+	<input type="text" name="name"/><br/>
+	<label>Hobbies:</label><br/>
+	<input type="checkbox" name="biking" value="biking"/>Biking<br/>
+	<input type="checkbox" name="skiing" value="skiing"/>Skiing<br/>
+	<input type="checkbox" name="diving" value="diving"/>Diving<br/>
+	<label for="my-form">Fav colour:</label>
+	<select name="colour">
+		<option>Red</option>
+		<option>Blue</option>
+		<option>Green</option>
+	</select>
+	<input type="submit" name="submit" value="Submit"/>
+</form>
 
 <script src="test.js"></script>
 

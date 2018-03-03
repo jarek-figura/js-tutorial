@@ -1,30 +1,16 @@
-// *** Lesson 42 *** //
+// *** Lesson 43 *** //
 
-/*
-var myMessage = document.getElementById("message");
+console.log(document.forms.myForm);
 
-function showMessage() {
-	myMessage.className = "show";
-}
+var myForm = document.forms.myForm;
+console.log(myForm.name);
+console.log(myForm.name.value);
+console.log(myForm.colour.value);
 
-setTimeout(showMessage, 3000);
-*/
-
-var colourChanger = document.getElementById("colour-changer");
-var colours = ["red", "blue", "green", "pink"];
-var counter = 0;
-
-function changeColour() {
-	if (counter >= colours.length) {
-		counter = 0;
-	}
-	colourChanger.style.background = colours[counter];
-	counter++;
-}
-
-var myTimer = setInterval(changeColour, 3000);
-
-colourChanger.onclick = function () {
-	clearInterval(myTimer);
-	colourChanger.innerHTML = "Timer stopped";
+myForm.name.onfocus = function() {
+	myForm.name.style.border = "4px solid pink";
 };
+myForm.name.onblur = function() {
+	myForm.name.style.border = "none";
+};
+
