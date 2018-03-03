@@ -1,4 +1,4 @@
-// *** Lesson 38 *** //
+// *** Lesson 39 *** //
 
 // DOM (Document Object Model)
 // Document is a representation of HTML
@@ -6,8 +6,12 @@
 // Model is a tree representation of Objects
 // Node is everything we can change in the Document (Element, Text, HTML attributes)
 
-var parent = document.getElementById("main-nav").getElementsByTagName("ul")[0]; console.log(parent);
-var child = parent.getElementsByTagName("li")[0];                               console.log(child);
-var removed = parent.removeChild(child);
+// alert("hey");
 
-parent.appendChild(removed);
+var title = document.getElementById("page-title");      console.log(title);
+title.onclick = function () {
+	alert("you clicked me");
+};
+title.onmouseover = function () {
+	alert("you hovered your mouse over me");
+};
