@@ -1,42 +1,34 @@
-// *** Lesson 30 *** //
+// *** Lesson 31 *** //
 
-/* object
- *
-var myCar = {
-	maxSpeed: 70,
-	driver: "Net Ninja",
-	drive: function (speed, time) {
-		console.log("driving distance: " + speed * time + " miles");
-	},
-	logDriver: function () {
-		console.log("driver name is: " + this.driver);
-	}
-};
- */
+var myDate = new Date();
+console.log(myDate);
 
-/* standard constructor functions
- *
-var myArray = new Array();
-var myStr = new String();
-*/
+var myPastDate = new Date(1545, 11, 2, 10, 30, 15);
+var myFutureDate = new Date(2515, 0, 31, 10, 30, 15);
 
-/* constructor function of a new object
- */
-var Car = function (maxSpeed, driver) {
-	this.maxSpeed = maxSpeed;
-	this.driver = driver;
-	this.drive = function (speed, time) {
-		console.log("driving distance: " + speed * time + " miles");
-	};
-	this.logDriver = function () {
-		console.log("driver is: " + this.driver);
-	};
-};
+console.log(myPastDate);
+console.log(myFutureDate);
 
-var myCar = new Car(70, "Net Ninja");
-var myCar2 = new Car(40, "Humpty Dumpty");
-var myCar3 = new Car(10, "Shaun");
-var myCar4 = new Car(90, "James Bond");
+var birthday  = new Date(1962, 0, 8, 8, 20, 0);
+var birthday2 = new Date(1962, 0, 8, 8, 20, 0);
 
-myCar.drive(30, 5);
-myCar3.logDriver();
+console.log(birthday.getFullYear());  // full year (YYYY)
+console.log(birthday.getMonth());     // month (0-11)
+console.log(birthday.getDate());      // day of month (1-31)
+console.log(birthday.getDay());       // day of week (0-6)
+console.log(birthday.getHours());     // hour (0-23)
+console.log(birthday.getTime());      // milliseconds since 01.01.1970
+
+// two different objects
+if (birthday === birthday2) {
+	console.log("birthdays are equal");
+} else {
+	console.log("birthdays are not equal");
+}
+
+// two the same amount of milliseconds
+if (birthday.getTime() === birthday2.getTime()) {
+	console.log("birthdays are equal");
+} else {
+	console.log("birthdays are not equal");
+}
